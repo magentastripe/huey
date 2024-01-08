@@ -2,7 +2,10 @@
 <div class="container">
 <nav class="navbar {{ .Site.Params.navbarStyle }} mb-4" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item title {{ .Site.Params.navbarTitleStyle | default "has-text-black" }}" href="{{ .Site.BaseURL }}">{{.Site.Title}}</a>
+    <div class="navbar-item title {{ .Site.Params.navbarTitleStyle | default "has-text-black" }}" >
+      <a href="{{ .Site.BaseURL }}">{{.Site.Title}}</a>
+      <div class="subtitle">{{ .Site.Params.Subtitle }}</div>
+    </div>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
